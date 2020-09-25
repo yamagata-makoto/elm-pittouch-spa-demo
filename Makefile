@@ -42,6 +42,7 @@ clean:
 	@rm -rf js
 	@rm -f app.zip
 	@rm -f package-lock.json
+	@rm -f contents/bundle.js
 
 reset:
 	@rm -r node_modules
@@ -49,4 +50,5 @@ reset:
 	@rm -rf js
 	@rm -f app.zip
 	@rm -f package-lock.json
+	@rm -f contents/bundle.js
 
