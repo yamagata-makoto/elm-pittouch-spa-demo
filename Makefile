@@ -17,6 +17,9 @@ target: app.zip
 init:
 	npm install
 
+run: bundle.js
+	@cd $(CONTENTS_DIR); npx serve -s
+
 app.zip: bundle.js
 	zip -r app.zip version.txt setting.txt contents/*
 
