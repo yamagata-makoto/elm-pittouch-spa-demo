@@ -1,0 +1,242 @@
+################################################################################
+#
+# コンテンツセット設定ファイル
+#
+# このファイルは、コンテンツセット内に同梱することで
+# 工場出荷時のdefault値の代わりに、使用する値を設定することができます
+#
+# 既に、ユーザによって値が変更されている項目に関しては変更されません
+# あくまでも、default値として利用されるものです
+# 設定値クリアを行うと、ここに記述されいる値が、使用されます
+#
+################################################################################
+
+# このファイルは、サンプルです
+# すべてコメントアウトされていますので、環境に応じて、先頭の「#」を削除し
+# 設定してご利用ください
+
+###########
+#
+# 端末設定
+#
+
+#本体音量
+#本体の音量を設定します
+#0～5
+
+#sound.play.volume:3
+
+#キーパッド操作音
+#キーパッドの操作音を設定します
+#0: OFF,1: ON
+
+#keypad.buz.enable:1
+
+#SSTouch音量
+#SSTouchの音量を設定します
+#0～5
+
+#sstouch.wave.volume:3
+
+#明るさ
+#画面の明るさを設定します
+#1～5
+
+#lcd.backlight.brightness:3
+
+###########
+#
+# LANポート設定
+#
+
+#IPアドレス取得方法
+#0:固定IP(手動),1:DHCP(自動)
+
+network.lan.ipmode.isdhcp:1
+
+#IPアドレス
+#固定IP時のIPアドレス
+
+#network.lan.ipaddr:
+
+#サブネットマスク
+#固定IP時のサブネットマスク
+
+#network.lan.subnet:
+
+#ゲートウェイアドレス
+#固定IP時のゲートウェイアドレス
+
+#network.lan.gateway:
+
+#プライマリDNSサーバアドレス
+#固定IP時のプライマリDNSサーバアドレス
+
+#network.lan.dns1:
+
+#セカンダリDNSサーバアドレス
+#固定IP時のセカンダリDNSサーバアドレス
+
+#network.lan.dns2:
+
+###########
+#
+# 通信モジュール設定
+#
+
+#通信モジュール
+#0: 使用しない,1: 使用する
+
+#ppp.device.enable:0
+
+#電話番号
+#接続先電話番号を設定します
+#32文字以内の文字列
+
+#ppp.provider.number:
+
+#ユーザ名
+#接続に使用するユーザ名を設定します
+#32文字以内の文字列
+
+#ppp.provider.user:
+
+#パスワード
+#接続に使用するパスワードを設定します
+#32文字以内の文字列
+
+#ppp.provider.pass:
+
+#ATコマンド
+#通信モジュール初期化時に実行するATコマンドを設定します
+#ATから始まる64文字以内の文字列
+
+#ppp.provider.initat:
+
+###########
+#
+# 時刻設定
+#
+
+#NTPサーバ名
+#NTPサーバを設定します
+#128文字以内の文字列
+
+time.ntp.server:local.nerima-kids.jp
+
+###########
+#
+# 設定パスワード
+#
+
+#設定パスワード
+#新しい設定パスワードを設定します
+#4～20桁の数値
+
+#settingpage.admin.password:
+
+###########
+#
+# 自動更新
+#
+
+#ファームウェア自動更新
+#1:有効, 0:無効
+
+#update.firmware.auto:0
+
+#ファームウェア更新確認サーバURL
+
+#update.firmware.server：
+
+#コンテンツセット自動更新
+#1:有効, 0:無効
+
+update.contents.auto:1
+
+#コンテンツセット更新確認サーバURL
+
+#update.contents.server:
+
+###########
+#
+# 無線LANモジュール設定
+#
+
+#無線LANモジュール設定
+#1:有効, 0:無効
+
+#wlan.device.enable:0
+
+#無線LAN SSID
+
+#wlan.device.ssid:
+
+#認証・暗号化
+#0:使わない,1:WEP,2:WPAパーソナル,3:WPA2パーソナル
+
+#wlan.security.authenc:0
+
+#WEPキー
+
+#wlan.wep.key0:
+
+#WPA共有キー
+
+#wlan.wpap.psk:
+
+#IPアドレス取得方法
+#0:固定IP(手動),1:DHCP(自動)
+
+network.wlan.ipmode.isdhcp:1
+
+#IPアドレス
+#固定IP時のIPアドレス
+
+#network.wlan.ipaddr:
+
+#サブネットマスク
+#固定IP時のサブネットマスク
+
+#network.wlan.subnet:
+
+#ゲートウェイアドレス
+#固定IP時のゲートウェイアドレス
+
+#network.wlan.gateway:
+
+#プライマリDNSサーバアドレス
+#固定IP時のプライマリDNSサーバアドレス
+
+#network.wlan.dns1:
+
+#セカンダリDNSサーバアドレス
+#固定IP時のセカンダリDNSサーバアドレス
+
+#network.wlan.dns2:
+
+###########
+#
+# プロキシ設定
+#
+
+#プロキシ設定
+#1:使用する, 0:使用しない
+
+#network.proxy.enable:0
+
+#プロキシサーバドメイン、もしくはアドレス
+
+#network.proxy.domain:
+
+#プロキシサーバのポート番号
+
+#network.proxy.port:
+
+#プロキシサーバの認証ユーザネーム
+
+#network.proxy.user:
+
+#プロキシサーバの認証パスワード
+
+#network.proxy.pass:
